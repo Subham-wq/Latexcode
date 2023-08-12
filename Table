@@ -1,0 +1,57 @@
+\begin{table*}[]
+\renewcommand{\arraystretch}{1}
+\caption{A comparison of accuracy among all the quantum methods both in the absence and presence of all noise models is given. Here, QSA and QHLO stand for Quantum Secure Aggregation and Quantum Hybrid Learning Optimization respectively.}
+\centering
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{{Quantum Methods}} &\textbf{{Noise Models}} & \textbf{{Maximum Accuracy}} & \textbf{{Behaviour of Accuracy varying noise parameters/iterations}}\\
+\hline
+QSA  & No Noise&0.786  &Fidelity fluctuates, from 0.75 to 0.8 \\
+\hline
+& Bitflip &0.8 &Fidelity steadily decreases with increase in noise parameter \\ 
+\hline
+&Phaseflip & 0.83 & increases, peak at noise parameter 0.47, then decreases\\
+\hline
+&Bitphaseflip & 0.8 &Fidelity steadily decreases with increase in noise parameter\\
+\hline
+&Depolarizing & 0.8&Fidelity steadily decreases with increase in noise parameter\\
+\hline
+&Amplitude Damping & 1.05& Fidelity steadily increases with increase in noise parameter\\
+\hline
+&Phase Damping &0.79 &Fidelity decreases sinusoidally \\
+\hline
+QHLO (for 6/9) & No Noise & 0.92 & accuracy fluctuates, from 0.8 to 0.92 \\ 
+\hline
+ & Bitflip & 0.92 & accuracy steadily decreases with increase in noise parameter till around 0.5 , then stays constant to near 0.6 then again decrease\\ 
+\hline
+&Phaseflip & 0.94 & accuracy stays constant till 0.2 p-value,then it decreases to 0.86 then reaches a peak of 0.94 , then decreases again to 0.86 then  , stays constant at 0.5 to 0.6 then again decreases\\
+\hline
+&Bitphaseflip &0.88 &  accuracy increases, makes a peak, then decreases, stays constant at 0.5 to 0.6 then again decreases\\
+\hline
+&Depolarizing & 0.87 &  accuracy steadily decreases with increase in noise parameter\\
+\hline
+&Amplitude Damping & 0.92 & Accuracy steadily Decreases with increase in noise parameter and get's steady after certain point near 0.3\\
+\hline
+&Phase Damping &0.92 &accuracy decreases and increases again, it repeat for 3 times,the lowest it reaches 0.86\\
+\hline
+QHLO (for 6/8) & No Noise & 1 & accuracy fluctuates, from 0.95 to 1.0 \\ 
+\hline
+& Bitflip & 0.98 & accuracy decreases with decrease in Noise parameters\\ 
+\hline
+&Phaseflip & 1.01& increases, make a peak, then decreases, creates three cycles like this\\
+\hline
+&Bitphaseflip & 1.013&steadily decreases up to noise parameter 0.58, then increases\\
+\hline
+&Depolarizing &0.85 & Fidelity steadily decreases with increase in noise parameter\\
+\hline
+&Amplitude Damping &1.025 & Fidelity steadily increases with increase in noise parameter\\
+\hline
+&Phase Damping & 0.868&Fidelity increases sinusoidally\\
+\hline
+
+
+\end{tabular}
+
+\label{TabI}
+\end{table*}
